@@ -30,10 +30,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 			vim.lsp.buf.signature_help()
 		end, { desc = "Signature help" })
 
-		keymap("n", "<leader>ca", function()
-			vim.lsp.buf.code_action()
-		end, { desc = "Code action" })
-
 		keymap("n", "<leader>ff", function()
 			vim.lsp.buf.format()
 		end, { desc = "Code action" })
